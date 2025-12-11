@@ -1,0 +1,407 @@
+<!DOCTYPE html><html>
+
+<head>
+
+<title>Birthday Wishes from Sasi</title>
+
+<style>
+
+body {
+
+background: url("swarnasis.jpg") center/cover no-repeat fixed;
+
+background-color: rgba(255, 255, 255, 0.6);
+
+background-blend-mode: lighten;
+
+font-family: "Segoe UI", Arial, sans-serif;
+
+text-align: center;
+
+padding: 50px;
+
+min-height: 100vh;
+
+box-sizing: border-box;
+
+overflow-x: hidden;
+
+}
+
+h1 {
+
+color: #ff3366;
+
+font-size: 42px;
+
+margin-bottom: 10px;
+
+}
+
+input, button {
+
+padding: 12px 18px;
+
+margin: 10px;
+
+border-radius: 10px;
+
+border: none;
+
+font-size: 18px;
+
+cursor: pointer;
+
+transition: transform .2s;
+
+}
+
+button:hover {
+
+transform: scale(1.05);
+
+}
+
+.hidden {
+
+display: none;
+
+}
+
+.letter {
+
+font-size: 22px;
+
+margin: 30px auto;
+
+color: #222;
+
+max-width: 700px;
+
+line-height: 1.45;
+
+white-space: pre-line;
+
+background: rgba(255,255,255,0.85);
+
+padding: 25px;
+
+border-radius: 12px;
+
+box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+
+}
+
+.typing {
+
+border-right: 2px solid #555;
+
+white-space: pre-line;
+
+overflow: hidden;
+
+animation: typing 4s steps(80, end), blink-caret 0.75s step-end infinite;
+
+}
+
+@keyframes typing {
+
+from { width: 0 }
+
+to { width: 100% }
+
+}
+
+@keyframes blink-caret {
+
+from, to { border-color: transparent }
+
+50% { border-color: #555 }
+
+}
+
+#musicBtn {
+
+position: fixed;
+
+bottom: 20px;
+
+right: 20px;
+
+z-index: 99;
+
+background: #ff3366;
+
+color: #fff;
+
+border-radius: 50%;
+
+width: 56px;
+
+height: 56px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+font-size: 26px;
+
+box-shadow: 0 4px 10px rgba(0,0,0,.2);
+
+}
+
+</style>
+
+</head>
+
+<body><audio id="bgMusic" src="Heeriye Arjith singh 320 kbps.mp3" autoplay loop></audio> <button id="musicBtn" onclick="toggleMusic()">⏸️</button>
+
+
+
+<div id="page1">
+
+<h1>🎂 Birthday Wishes from Sasi 🎂</h1>
+
+<p>Enter your friend’s name:</p>
+
+<input type="text" id="nameInput" placeholder="Enter name">
+
+<br>
+
+<button onclick="goToPage2()">Next</button>
+
+</div> <div id="page2" class="hidden">
+
+<h1>Pick a letter style for <span id="personName"></span></h1>
+
+<button onclick="showLetter(1)">letter 1 💌</button>
+
+<button onclick="showLetter(2)">letter 2 🤪</button>
+
+</div> <div id="page3" class="hidden">
+
+<div class="letter"><div id="letterContent" class="typing"></div></div>
+
+<br>
+
+<button onclick="showFinalPage()">Next ➡️</button>
+
+</div> <div id="page4" class="hidden">
+
+<h1>🎉 Enjoy the Birthday! 🎉</h1>
+
+<p class="letter">
+
+Enjoy the birthday with full of joy. <br>
+
+I am your side always forever. <br><br>
+
+— <strong>shyness_boy_sasi_</strong>
+
+</p>
+
+</div> <script>
+
+let name="";
+
+const music=document.getElementById("bgMusic");
+
+const btn=document.getElementById("musicBtn");
+
+
+
+function toggleMusic(){
+
+if(music.paused){ music.play(); btn.textContent="⏸️"; }
+
+else{ music.pause(); btn.textContent="▶️"; }
+
+}
+
+
+
+function goToPage2(){
+
+name=document.getElementById("nameInput").value.trim();
+
+if(!name){alert("Please enter a name!");return;}
+
+document.getElementById("personName").innerText=name;
+
+swap("page1","page2");
+
+}
+
+
+
+function showLetter(opt){
+
+const letter1 =
+
+You said:
+give me a message to my sister for her birthday give me in medium size
+ChatGPT said:
+Sure! Here’s a medium-length birthday message you can send to your sister:
+
+Happy Birthday, sis! 🎉💖
+I’m so grateful to have you in my life—not just as family, but as a friend I can always count on. You bring so much light, laughter, and love wherever you go, and I hope this year gives all of that back to you and more. May your day be filled with joy, your year with new adventures, and your heart with everything you’ve been wishing for. Enjoy your special day—you deserve it! 💕🎂
+
+If you want it sweeter, funnier, or more emotional, I can rewrite it!
+
+You said:
+give me long one is funny one is feelings about her
+ChatGPT said:
+Here’s a long, funny, and heartfelt birthday message for your sister:
+
+Happy Birthday to the one and only sister who manages to be my best friend, my therapist, my partner in crime, and my biggest headache—all at the same time! 🎉😂
+
+I honestly don’t know how you do it… You somehow make me laugh until I can’t breathe, annoy me until I lose my mind, and still be the person I love more than almost anyone on this planet. Growing up with you has been one wild adventure—from our stupid arguments about literally nothing, to the moments we laughed at jokes only we understand, to those nights we stayed up talking about life like we were wiser than the world.
+
+You’re not just my sister—you’re the person who knows my history, my weaknesses, my strengths, and still loves me anyway. I admire your strength, your humor, your kindness, and the way you keep pushing forward even when life throws chaos your way. You inspire me more than you realize, and I’m so proud of the person you’ve become.
+
+So here’s to you—
+to your big heart,
+your stubbornness (yes, that too 😆),
+your weirdness that matches mine perfectly,
+and your ability to make everything brighter just by being around.
+
+May this year bring you more happiness, success, love, and moments that make you laugh so hard you snort. You deserve all of it and more.
+
+Happy Birthday, sis! I love you more than I’ll ever admit out loud. 💖😂🎂✨
+
+Want it even funnier or more emotional? I can adjust it!
+
+You said:
+give me two messages 1)feelings in my sister 2)funny
+ChatGPT said:
+Here are two separate birthday messages — one emotional and heartfelt, and the second one funny:
+
+1) Heartfelt / Feelings Message 💖
+Happy Birthday, sis. On your special day, I just want you to know how truly grateful I am to have you in my life. You’ve always been someone I can trust, someone who understands me even when I can’t explain myself, and someone who brings comfort just by being there. You’re not only my sister—you’re my safe place, my supporter, and my closest friend.
+
+Watching you grow into the strong, loving, and beautiful person you are makes me proud every single day. Thank you for all the moments you’ve cared for me, laughed with me, cried with me, and stood by me. I hope this new year of your life brings you everything your heart needs—happiness, peace, love, and the success you deserve.
+I love you more than words can say. Happy Birthday. 💕✨
+
+░██████╗░██╗░░░░░░░██╗░█████╗░██████╗░███╗░░██╗
+██╔════╝░██║░░██╗░░██║██╔══██╗██╔══██╗████╗░██║
+╚█████╗░░╚██╗████╗██╔╝███████║██████╔╝██╔██╗██║
+░╚═══██╗░░████╔═████║░██╔══██║██╔══██╗██║╚████║
+██████╔╝░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██║░╚███║
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+
+
+
+— shyness_boy_sasi_`;
+
+
+
+const letter2 =
+You said:
+give me a message to my sister for her birthday give me in medium size
+ChatGPT said:
+Sure! Here’s a medium-length birthday message you can send to your sister:
+
+Happy Birthday, sis! 🎉💖
+I’m so grateful to have you in my life—not just as family, but as a friend I can always count on. You bring so much light, laughter, and love wherever you go, and I hope this year gives all of that back to you and more. May your day be filled with joy, your year with new adventures, and your heart with everything you’ve been wishing for. Enjoy your special day—you deserve it! 💕🎂
+
+If you want it sweeter, funnier, or more emotional, I can rewrite it!
+
+You said:
+give me long one is funny one is feelings about her
+ChatGPT said:
+Here’s a long, funny, and heartfelt birthday message for your sister:
+
+Happy Birthday to the one and only sister who manages to be my best friend, my therapist, my partner in crime, and my biggest headache—all at the same time! 🎉😂
+
+I honestly don’t know how you do it… You somehow make me laugh until I can’t breathe, annoy me until I lose my mind, and still be the person I love more than almost anyone on this planet. Growing up with you has been one wild adventure—from our stupid arguments about literally nothing, to the moments we laughed at jokes only we understand, to those nights we stayed up talking about life like we were wiser than the world.
+
+You’re not just my sister—you’re the person who knows my history, my weaknesses, my strengths, and still loves me anyway. I admire your strength, your humor, your kindness, and the way you keep pushing forward even when life throws chaos your way. You inspire me more than you realize, and I’m so proud of the person you’ve become.
+
+So here’s to you—
+to your big heart,
+your stubbornness (yes, that too 😆),
+your weirdness that matches mine perfectly,
+and your ability to make everything brighter just by being around.
+
+May this year bring you more happiness, success, love, and moments that make you laugh so hard you snort. You deserve all of it and more.
+
+Happy Birthday, sis! I love you more than I’ll ever admit out loud. 💖😂🎂✨
+
+Want it even funnier or more emotional? I can adjust it!
+
+You said:
+give me two messages 1)feelings in my sister 2)funny
+ChatGPT said:
+Here are two separate birthday messages — one emotional and heartfelt, and the second one funny:
+
+1) Heartfelt / Feelings Message 💖
+Happy Birthday, sis. On your special day, I just want you to know how truly grateful I am to have you in my life. You’ve always been someone I can trust, someone who understands me even when I can’t explain myself, and someone who brings comfort just by being there. You’re not only my sister—you’re my safe place, my supporter, and my closest friend.
+
+Watching you grow into the strong, loving, and beautiful person you are makes me proud every single day. Thank you for all the moments you’ve cared for me, laughed with me, cried with me, and stood by me. I hope this new year of your life brings you everything your heart needs—happiness, peace, love, and the success you deserve.
+I love you more than words can say. Happy Birthday. 💕✨
+
+2) Funny Message 😂🎉
+Happy Birthday, sis! 🎂🎉 Another year older, wiser, and still somehow convinced you’re the favorite child (don’t worry, I’ll let you keep believing it 😆). Thanks for being the only person who can annoy me and make me laugh at the same time. Honestly, I don’t know if you’re a blessing or a full-time headache, but I guess I’m stuck with you forever!
+
+Here’s to another year of stealing my clothes, eating my food, giving unwanted advice, and acting like you’re the boss. Just kidding—kind of. 😂
+But seriously, you make life a whole lot more fun, and I wouldn’t trade you for anything… except maybe a lifetime supply of pizza. Happy Birthday, you lovable disaster! 🎉😜💖
+
+██╗░░░░░░█████╗░████████╗██╗░░██╗░█████╗░░█████╗░
+██║░░░░░██╔══██╗╚══██╔══╝██║░░██║██╔══██╗██╔══██╗
+██║░░░░░███████║░░░██║░░░███████║███████║███████║
+██║░░░░░██╔══██║░░░██║░░░██╔══██║██╔══██║██╔══██║
+███████╗██║░░██║░░░██║░░░██║░░██║██║░░██║██║░░██║
+╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝
+
+
+
+
+— shyness_boy_sasi_`;
+
+
+
+const letterText = opt === 1 ? letter1 : letter2;
+
+const content = document.getElementById("letterContent");
+
+content.classList.remove("typing");
+
+content.innerText = "";
+
+setTimeout(() => {
+
+content.innerText = letterText;
+
+content.classList.add("typing");
+
+}, 50);
+
+
+
+swap("page2","page3");
+
+}
+
+
+
+function showFinalPage(){swap("page3","page4");}
+
+
+
+function swap(hideId,showId){
+
+document.getElementById(hideId).classList.add("hidden");
+
+document.getElementById(showId).classList.remove("hidden");
+
+}
+
+
+
+document.addEventListener('click',()=>music.play(),{once:true});
+
+</script></body>
+
+</html>
